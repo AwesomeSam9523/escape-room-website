@@ -1,4 +1,6 @@
 import NavBar from "@/components/NavBar";
+import AnatomyImage from "@/public/anatomy.jpg";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -9,8 +11,8 @@ export default function Home() {
         <div className="w-full bg-red-600 text-white p-4 mb-0 text-center font-semibold text-xl py-2 rounded">
           HINT
         </div>
-        <div className="flex flex-col bg-darkBlack rounded-xl w-full h-full mt-4 border-[1px] border-white">
-
+        <div className="flex flex-col items-center py-1 bg-darkBlack rounded-xl w-full h-full mt-4 border-[1px] border-white">
+          <Image src={AnatomyImage} alt={"Anatomy Image"} />
         </div>
       </div>
     </div>
